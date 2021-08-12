@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_8sdp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imagesubject"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/english" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            >
+            <TextView
+                android:id="@+id/textsubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English Group"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:lineSpacingExtra="@dimen/_1sdp"
+                android:text="Grade 5"
+                android:textColor="#7e7e7e"
+                android:fontFamily="@font/medium"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/textstudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:lineSpacingExtra="@dimen/_1sdp"
+                android:text="20 Students"
+                android:textColor="#7e7e7e"
+                android:fontFamily="@font/medium"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="end"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:text="Available in 30 mins"
+                android:fontFamily="@font/fonts_medium"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:textColor="@color/black"
+                android:drawablePadding="@dimen/_2sdp"
+                android:drawableRight="@drawable/offline"
+                android:drawableTint="@color/green"
+                android:textStyle="normal"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/number"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="#C60B0B">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="3"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

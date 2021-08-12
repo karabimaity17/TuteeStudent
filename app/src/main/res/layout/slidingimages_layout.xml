@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lin"
+    >
+
+    <ImageView
+        android:id="@+id/imageviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_375sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/page1" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/bold"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="4sp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:text="EdumeApp Learning for K-12"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/fonts_medium"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:lineSpacingExtra="6sp"
+        android:text="EdumeApp is a leading educational  technology apps for K-12 and Test (CBSE UK, O level)."
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textSize="14sp"
+        />
+
+</LinearLayout>

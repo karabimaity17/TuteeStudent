@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    android:supportsRtl="true">
+    <item
+        android:id="@+id/option_star"
+        android:title="Star"
+        android:icon="@drawable/star"
+        android:iconTint="@color/black"
+
+        android:supportsRtl="true"/>
+
+    <item
+        android:id="@+id/option_reply"
+        android:title="Reply"
+        android:icon="@drawable/back_arrow"
+        android:iconTint="@color/black"
+        android:supportsRtl="true"/>
+    <item
+        android:id="@+id/option_frwd"
+        android:title="Forward"
+        android:icon="@drawable/forward_arrow"
+        android:iconTint="@color/black"
+        android:supportsRtl="true"/>
+
+    <item
+        android:id="@+id/option_copy"
+        android:title="Copy"
+        android:icon="@drawable/copy"
+        android:iconTint="@color/black"
+        android:supportsRtl="true"
+        />
+
+    <item
+        android:id="@+id/option_delete"
+        android:title="Delete"
+        android:icon="@drawable/trash"
+        android:iconTint="@color/black"/>
+</menu>

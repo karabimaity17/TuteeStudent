@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ques_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonts_medium"
+            android:textStyle="normal"
+            android:textSize="13sp"
+            android:textColor="#3e3e3e"
+            android:lineSpacingExtra="6sp"
+            android:text="01"/>
+        <TextView
+            android:id="@+id/text_ques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonts_medium"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textStyle="normal"
+            android:textSize="13sp"
+            android:lineSpacingExtra="6sp"
+            android:text="Match the following items given in Column A with those in Column B. Choose the correct answer from the options given below:"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fonts_medium"
+                android:textStyle="normal"
+                android:textSize="13sp"
+                android:textColor="@color/colorPurple"
+                android:lineSpacingExtra="6sp"
+                android:text="Column A"/>
+            <TextView
+                android:id="@+id/a_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="A. Rashsundari Devi"
+                android:textSize="13sp"
+                android:background="@drawable/grey_background"/>
+            <TextView
+                android:id="@+id/a_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="A. Rashsundari Devi"
+                android:textSize="13sp"
+                android:background="@drawable/grey_background"/>
+            <TextView
+                android:id="@+id/a_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="A. Rashsundari Devi"
+                android:textSize="13sp"
+                android:background="@drawable/grey_background"/>
+            <TextView
+                android:id="@+id/a_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="A. Rashsundari Devi"
+                android:textSize="13sp"
+                android:background="@drawable/grey_background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fonts_medium"
+                android:textStyle="normal"
+                android:textSize="13sp"
+                android:textColor="@color/colorPurple"
+                android:lineSpacingExtra="6sp"
+                android:text="Column B"/>
+            <TextView
+                android:id="@+id/b_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="1. Chhote Aur Baade"
+                android:textSize="13sp"
+                android:background="@drawable/grey_background"/>
+            <TextView
+                android:id="@+id/b_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="2. Rashsundari Devi"
+                android:textSize="13sp"
+                android:background="@drawable/grey_background"/>
+            <TextView
+                android:id="@+id/b_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="3. Rashsundari Devi"
+                android:textSize="13sp"
+                android:background="@drawable/grey_background"/>
+            <TextView
+                android:id="@+id/b_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="4. Rashsundari Devi"
+                android:textSize="13sp"
+                android:background="@drawable/grey_background"/>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_mcq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/single_mcq"
+        tools:itemCount="4"/>
+</LinearLayout>

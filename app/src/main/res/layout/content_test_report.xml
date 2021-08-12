@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menubottom_nav"
+
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnav">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/nav_image"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daniel William"
+                        android:textColor="@color/colorPurple"
+                        android:fontFamily="@font/fonts_bold"
+                        android:layout_marginVertical="@dimen/_3sdp"
+                        android:textSize="15sp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CBSE"
+                            android:fontFamily="@font/fonts_semibold"
+                            android:textColor="#3C3B3B"
+                            android:textSize="14sp"
+                            android:textStyle="normal"/>
+                        <TextView
+                            android:id="@+id/company_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="V"
+                            android:fontFamily="@font/fonts_semibold"
+                            android:textColor="#3C3B3B"
+                            android:textSize="14sp"
+                            android:textStyle="normal"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID 02154"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textSize="14sp" />
+                        <View
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:background="#BDB8B8"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@danielwilliam"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Report Date:"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textSize="14sp"
+                            android:textStyle="normal"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="10.2.2020"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textSize="14sp"
+                            android:textStyle="normal"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="English"
+                            android:textColor="@color/colorPurple"
+                            android:fontFamily="@font/fonts_bold"
+                            android:layout_marginVertical="@dimen/_3sdp"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Marks:"
+                                android:textColor="#000"
+                                android:fontFamily="@font/fonts_medium"
+                                android:layout_marginVertical="@dimen/_3sdp"
+                                android:textSize="14sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="8"
+                                android:textColor="#000"
+                                android:fontFamily="@font/fonts_medium"
+                                android:layout_marginVertical="@dimen/_3sdp"
+                                android:textSize="14sp"
+                                />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#EDEDED"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Correct"
+                                android:fontFamily="@font/fonts_regular"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="@dimen/_5sdp"
+                                android:text="10/25"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textSize="14sp"
+                                android:textColor="#000"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Attempted"
+                                android:fontFamily="@font/fonts_regular"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="@dimen/_5sdp"
+                                android:text="18/45"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textSize="14sp"
+                                android:textColor="#000"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Avg.Speed"
+                                android:fontFamily="@font/fonts_regular"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="@dimen/_5sdp"
+                                android:text="150+ Q/Hr"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textSize="14sp"
+                                android:textColor="#000"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesson Title"
+                android:textColor="@color/colorPurple"
+                android:fontFamily="@font/fonts_bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Questions from this Chapter"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/fonts_medium"
+                android:textSize="14sp"
+                android:textStyle="normal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/background3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:text="Questions"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/fonts_semibold"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q.1 Which of the following is not a Rule of Language ? "
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:textColor="#000"
+                android:fontFamily="@font/fonts_semibold"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Syntax"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_background"
+                        android:checked="false"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:clickable="false"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/fonts_medium" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Semissis"
+                        android:textSize="14sp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_background"
+                        android:checked="false"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:clickable="false"
+                        android:fontFamily="@font/fonts_medium" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:text="Lexcsjhgjhg"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/checkbox_background"
+                            android:checked="true"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:clickable="false"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/fonts_medium" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:text="Correct"
+                            android:textColor="#136517"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Pragnbjhgj"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_background"
+                        android:checked="false"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:clickable="false"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/fonts_medium" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:gravity="end"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_alignParentRight="true"
+                    android:text="Mark: 5"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q.2 Which of the following is not a Rule of Language ? "
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:textColor="#000"
+                android:fontFamily="@font/fonts_semibold"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Syntax"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_background"
+                        android:checked="false"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:clickable="false"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/fonts_medium" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Semissis"
+                        android:textSize="14sp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_background"
+                        android:checked="false"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:clickable="false"
+                        android:fontFamily="@font/fonts_medium" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:text="Lexcsjhgjhg"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/checkbox_background"
+                            android:checked="true"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:clickable="false"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/fonts_medium" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:text="Correct"
+                            android:textColor="#136517"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:text="Pragnbjhgj"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/incorrect_checkbox_background"
+                            android:checked="true"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:clickable="false"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/fonts_medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:text="Incorrect"
+                            android:textColor="@color/red"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:gravity="end"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_alignParentRight="true"
+                    android:text="Mark: 5"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q.3 Which of the following is not a Rule of Language ? "
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:textColor="#000"
+                android:fontFamily="@font/fonts_semibold"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Syntax"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_background"
+                        android:checked="false"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:clickable="false"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/fonts_medium" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Semissis"
+                        android:textSize="14sp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_background"
+                        android:checked="false"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:clickable="false"
+                        android:fontFamily="@font/fonts_medium" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:text="Lexcsjhgjhg"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/checkbox_background"
+                            android:checked="true"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:clickable="false"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/fonts_medium" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:text="Correct"
+                            android:textColor="#136517"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Pragnbjhgj"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_background"
+                        android:checked="false"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:clickable="false"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/fonts_medium" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:gravity="end"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_alignParentRight="true"
+                    android:text="Mark: 5"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Save PDF"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/fonts_bold"
+                    android:background="@drawable/btnbackground2"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

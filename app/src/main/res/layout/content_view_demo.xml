@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imagevideo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"
+                android:src="@drawable/video1" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"
+                android:alpha="0.3"
+                android:background="@color/black"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:src="@drawable/play" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_170sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bold"
+                    android:lineSpacingExtra="6sp"
+                    android:text="1:45"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_176sdp"
+                    android:layout_weight="1"
+                    android:background="#73ffffff"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_170sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bold"
+                    android:lineSpacingExtra="6sp"
+                    android:text="1:45"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_171sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_maxmini" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/dp"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_75sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:src="@drawable/dp" />
+
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:isIndicator="true"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="#ffd800"
+                    android:rating="4"
+                    android:scaleX="1.0"
+                    android:scaleY="1.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Daniel William"
+                    android:fontFamily="@font/bold"
+                    android:textColor="@color/purple"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:text="CBSE | India"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:fontFamily="@font/medium"
+                    android:text="Maths | Physics | English"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="From"
+                        android:fontFamily="@font/medium"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/india"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="India"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/light_black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/lives"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="Lives"
+                        android:fontFamily="@font/medium"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="UAE"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/light_black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="Subscribers"
+                        android:fontFamily="@font/medium"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="134"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/light_black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="Views"
+                        android:fontFamily="@font/medium"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="1500"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/light_black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="#e6e6e6" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            app:tabIconTint="@color/purple"
+            style="@style/tablayouttext"
+            app:tabTextColor="@color/light_black"
+            app:tabIndicatorHeight="@dimen/_2sdp"
+            app:tabMode="fixed" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="#e6e6e6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@drawable/light_background2"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_15sdp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_24sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="Videos"
+                android:fontFamily="@font/semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/purple"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textebook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_35sdp"
+                android:text="E-Books"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager14"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_280sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbackground"
+                android:text="Send Message"
+                android:fontFamily="@font/bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <android.widget.Button
+                android:id="@+id/btnregistration"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:text="Cont. Registration"
+                android:fontFamily="@font/bold"
+                android:textAllCaps="false"
+                android:textColor="#753abc"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

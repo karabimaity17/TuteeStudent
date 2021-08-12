@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/fonts_semibold"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:textColor="#753abc"
+        android:lineSpacingExtra="4sp"
+        android:text="21 Favourite Chapters"
+        android:background="@drawable/lightcolorbg"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_favourite"/>
+</LinearLayout>

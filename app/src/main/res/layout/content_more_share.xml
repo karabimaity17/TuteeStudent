@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/lin">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:tabIconTint="@color/purple"
+            app:tabTextColor="@color/light_black"
+            app:tabIndicatorHeight="@dimen/_2sdp"
+            app:tabMode="scrollable" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:gravity="center"
+        android:background="@drawable/lightcolorbg2"
+        android:orientation="horizontal"
+        android:layout_above="@id/bottomnav">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_23sdp"
+            android:src="@drawable/microphone"
+            app:tint="@color/colorPrimary"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_23sdp"
+            android:src="@drawable/speaker"
+            app:tint="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="@dimen/_35sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_7sdp"
+            android:text="End Share"
+            android:clickable="true"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:fontFamily="@font/fonts_bold"
+            android:background="@drawable/red_box"
+            android:elevation="@dimen/_5sdp"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/more_share"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text="More"
+            android:textColor="#000"
+            android:fontFamily="@font/fonts_medium"
+            android:layout_marginVertical="@dimen/_3sdp"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_23sdp"
+            android:src="@drawable/sms"
+            app:tint="@color/colorPrimary"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_23sdp"
+            android:src="@drawable/call"
+            app:tint="@color/colorPrimary"/>
+
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menubottom_nav"
+
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menubottom_nav"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/bottomnav">
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:id="@+id/lin_teacher">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:text="My Teachers"
+                    android:textColor="#000"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/fonts_medium"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/light_grey"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:id="@+id/lin_chat">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:text="Chat"
+                    android:textColor="#000"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/fonts_medium"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/light_grey"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:id="@+id/lin_screen_share">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:text="Screen Share"
+                    android:textColor="#000"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/fonts_medium"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/colorPrimary"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:id="@+id/lin_group">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:text="Group"
+                    android:textColor="#000"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/fonts_medium"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/light_grey"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lin_screen"
+            android:visibility="visible">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_3sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_10sdp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fonts_medium"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:textColor="#3e3e3e"
+                        android:lineSpacingExtra="6sp"
+                        android:text="Teacher accepted your screen sharing and call" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        app:cardCornerRadius="@dimen/_6sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginHorizontal="@dimen/_15sdp">
+                        <TextView
+                            android:id="@+id/btn_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Share"
+                            android:textColor="#fff"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:fontFamily="@font/fonts_bold"
+                            android:background="#9900cc"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_3sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_10sdp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fonts_medium"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:textColor="#3e3e3e"
+                        android:lineSpacingExtra="6sp"
+                        android:text="Teacher accepted your share and put on hold" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        app:cardCornerRadius="@dimen/_6sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginHorizontal="@dimen/_15sdp">
+                        <TextView
+                            android:id="@+id/btn_wait"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="I will wait"
+                            android:textColor="#fff"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:fontFamily="@font/fonts_bold"
+                            android:background="@color/light_blue"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_3sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_10sdp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fonts_medium"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:textColor="#3e3e3e"
+                        android:lineSpacingExtra="6sp"
+                        android:text="Teacher declined your share and call, maybe use" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        app:cardCornerRadius="@dimen/_6sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginHorizontal="@dimen/_15sdp">
+                        <TextView
+                            android:id="@+id/btn_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Send Message"
+                            android:textColor="#fff"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:fontFamily="@font/fonts_bold"
+                            android:background="@color/teal_200"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

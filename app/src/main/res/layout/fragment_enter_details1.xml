@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textdesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/bold"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="4sp"
+        android:text="Enter Your Details"
+        android:textColor="@color/light_black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textbelowdesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/medium"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="6sp"
+        android:text="Pleasr input the following details"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/semibold"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="4sp"
+        android:text="ALEX BENJAMIN"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textcountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:fontFamily="@font/medium"
+        android:lineSpacingExtra="3sp"
+        android:text="COUNTRY OF LIVING"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_9sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/semibold"
+                android:lineSpacingExtra="4sp"
+                android:text="United Arab Emirates"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/medium"
+                android:paddingLeft="100dp"
+                android:text="Change"
+                android:textColor="@color/purple"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:hint="DATE OF BIRTH"
+            android:paddingStart="@dimen/_minus13sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:background="@drawable/underline"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/grey"
+            app:hintTextAppearance="@style/TextViewTextAppearance">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/_30sdp"
+                android:text="05/05/1998"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spingender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:fontFamily="@font/medium"
+        android:hint="GENDER"
+        android:text="Male"
+        android:textColor="@color/light_black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:met_floatingLabel="normal"
+        app:met_textColorHint="@color/grey"
+        app:met_underlineColor="@color/grey" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinnation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:fontFamily="@font/medium"
+        android:hint="NATIONALITY"
+        android:textColor="@color/light_black"
+        android:textSize="12sp"
+        android:text="United Arab Emirates"
+        android:textStyle="bold"
+        app:met_floatingLabel="normal"
+        app:met_textColorHint="@color/grey"
+        app:met_underlineColor="@color/grey" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:fontFamily="@font/medium"
+        android:hint="EMAIL"
+        android:text="anyemailaddress@gmail.com"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/light_black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:met_floatingLabel="normal"
+        app:met_textColorHint="@color/grey"
+        app:met_underlineColor="@color/grey" />
+    <!--
+        <TextView
+            android:id="@+id/textgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/medium"
+            android:lineSpacingExtra="3sp"
+            android:text="GENDER"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/spingender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/textnationality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/medium"
+            android:lineSpacingExtra="3sp"
+            android:text="NATIONALITY"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/spinnation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp" />
+
+           <TextView
+               android:id="@+id/textemail"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_16sdp"
+               android:layout_marginTop="@dimen/_8sdp"
+               android:fontFamily="@font/medium"
+               android:lineSpacingExtra="3sp"
+               android:text="Email"
+               android:textColor="@color/grey"
+               android:textStyle="normal" />-->
+
+
+</LinearLayout>

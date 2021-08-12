@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/lightcolorbg"
+        android:fontFamily="@font/fonts_semibold"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#753abc"
+        android:lineSpacingExtra="4sp"
+        android:text="Work 1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fonts_semibold"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#3e3e3e"
+        android:lineSpacingExtra="6sp"
+        android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="@dimen/_40sdp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            app:cardBackgroundColor="#f8f8f8">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/attach"
+                app:tint="#7e7e7e"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_35sdp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_10sdp">
+            <TextView
+                android:id="@+id/btn_wait"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Upload"
+                android:textColor="#753abc"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:fontFamily="@font/fonts_semibold"
+                android:background="@drawable/bg_button"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_35sdp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_10sdp">
+            <TextView
+                android:id="@+id/btn_"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:fontFamily="@font/fonts_semibold"
+                android:background="@drawable/btnbackground2"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_10sdp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="File Name"
+            android:paddingVertical="@dimen/_5sdp"/>
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CD0303"
+            android:text="Cancel"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

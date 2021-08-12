@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/lightcolorbg"
+                android:fontFamily="@font/fonts_semibold"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="#753abc"
+                android:lineSpacingExtra="4sp"
+                android:text="1st Term" />
+
+
+            <LinearLayout
+                android:layout_below="@id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/background3"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/lin">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_semibold"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Grade V" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_semibold"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="4sp"
+                    android:text="English" />
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_400sdp"
+
+                android:layout_above="@id/rv_page"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_page"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:itemCount="5"
+                tools:listitem="@layout/selected_page2"
+                android:layout_above="@id/card"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/card">
+                <TextView
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Next"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:fontFamily="@font/fonts_medium"
+                    android:background="@drawable/btnbackground2"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background"
+        app:itemHorizontalTranslationEnabled="true"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menubottom_nav" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@id/bottomnav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginVertical="@dimen/_60sdp"
+                android:src="@drawable/regissucces"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fonts_bold"
+                android:textSize="25sp"
+                android:textColor="#3e3e3e"
+                android:lineSpacingExtra="4sp"
+                android:gravity="center_horizontal"
+                android:text="Congratulations!" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fonts_medium"
+                android:textSize="20sp"
+                android:textColor="@color/light_black"
+                android:lineSpacingExtra="4sp"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center_horizontal"
+                android:text="Your Profile Changes \nSuccessfully Saved" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/btn_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Go to Profile"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:fontFamily="@font/fonts_bold"
+                android:background="@drawable/btnbackground2"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

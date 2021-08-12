@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:id="@+id/card_exercise"
+    app:cardBackgroundColor="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chapter Title 1"
+                android:textColor="#000"
+                android:fontFamily="@font/fonts_medium"
+                android:layout_marginVertical="@dimen/_3sdp"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/action"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/green_check"
+                android:layout_marginBottom="@dimen/_15sdp"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/text_chapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Content Forces and Newtons Law"
+            android:fontFamily="@font/fonts_medium"
+            android:textSize="13sp"
+            android:textStyle="normal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_subj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:fontFamily="@font/fonts_medium"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:background="#A6A3A3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesson Code:"
+                android:fontFamily="@font/fonts_medium"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+            <TextView
+                android:id="@+id/lesson_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32654"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/fonts_medium"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/text_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Yesterday"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/fonts_medium"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

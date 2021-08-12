@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/white">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemHorizontalTranslationEnabled="true"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menubottom_nav"
+        tools:targetApi="lollipop" />
+
+
+    <!--<FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnav"
+        android:background="#fff" />-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@id/bottomnav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imagevideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_190sdp"
+                    android:src="@drawable/video1" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_190sdp"
+                    android:alpha="0.3"
+                    android:background="@color/black"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:src="@drawable/play" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_170sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/bold"
+                        android:lineSpacingExtra="6sp"
+                        android:text="1:45"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <View
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_176sdp"
+                        android:layout_weight="1"
+                        android:background="#73ffffff"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_170sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/bold"
+                        android:lineSpacingExtra="6sp"
+                        android:text="1:45"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_171sdp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_maxmini" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="News Updates"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/light_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:tabIconTint="@color/purple"
+                app:tabTextColor="@color/light_black"
+                app:tabIndicatorHeight="@dimen/_2sdp"
+                app:tabMode="scrollable" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:background="#e6e6e6" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpagerfrag"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_280sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/background3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_16sdp"
+                android:text="Chapters"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvhome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

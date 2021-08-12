@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardtext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Daniel William"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/purple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_210sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:text="RENEW"
+                android:fontFamily="@font/semibold"
+                android:textColor="#cc2d2d"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_33sdp"
+                android:text="CBSE | India"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:fontFamily="@font/medium"
+                android:text="Maths | Physics | English"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_65sdp"
+                android:text="From"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/india"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_65sdp"
+                android:text="India"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_95sdp"
+                android:layout_marginTop="@dimen/_65sdp"
+                android:text="Lives"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_125sdp"
+                android:layout_marginTop="@dimen/_65sdp"
+                android:text="UAE"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:text="Subscribers"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_73sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:text="134"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:text="Views"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_130sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:text="1500"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_110sdp"
+                android:text="Mathematics"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_130sdp"
+                android:text="10 Months"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_220sdp"
+                android:layout_marginTop="@dimen/_125sdp"
+                android:text="$12"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_150sdp"
+                android:text="Expire 12.05.2021"
+                android:fontFamily="@font/semibold"
+                android:textColor="#cc2d2d"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_175sdp"
+                android:background="#1f000000"
+                android:textSize="14sp"
+                android:fontFamily="@font/semibold"
+                android:text="Add More Subject"
+                android:textAllCaps="false" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardtext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cardtext1"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Merry Ajit"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/purple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_210sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:text="RENEW"
+                android:fontFamily="@font/semibold"
+                android:textColor="#cc2d2d"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="CBSE | India"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:text="Maths | Physics | English"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_65sdp"
+                android:text="From"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_65sdp"
+                android:text="India"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_95sdp"
+                android:layout_marginTop="@dimen/_65sdp"
+                android:text="Lives"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_125sdp"
+                android:layout_marginTop="@dimen/_65sdp"
+                android:text="UAE"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:text="Subscribers"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_73sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:text="134"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:text="Views"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_130sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:text="1500"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_110sdp"
+                android:text="Mathematics"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_130sdp"
+                android:text="10 Months"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_220sdp"
+                android:layout_marginTop="@dimen/_125sdp"
+                android:text="$12"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_150sdp"
+                android:text="Physics"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_170sdp"
+                android:text="10 Months"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_220sdp"
+                android:layout_marginTop="@dimen/_165sdp"
+                android:text="$12"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:text="Expire 12.05.2021"
+                android:fontFamily="@font/semibold"
+                android:textColor="#cc2d2d"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_225sdp"
+                android:background="#1f000000"
+                android:textSize="14sp"
+                android:fontFamily="@font/semibold"
+                android:text="Add More Subject"
+                android:textAllCaps="false" />
+        </androidx.cardview.widget.CardView>
+
+        <android.widget.Button
+            android:id="@+id/btnaddteach"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/semibold"
+            android:layout_below="@+id/cardtext2"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:background="@drawable/btnbackground"
+            android:text="Add More Teacher"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

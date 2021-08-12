@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context=".SplashScreen">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/geometry"
+        />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_375sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/frontimage" />
+
+    <ImageView
+        android:id="@+id/imageicon"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_below="@+id/imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/logo_white" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/light"
+        android:lineSpacingExtra="3sp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:text="Copyright © 2020. All Rights Reserved"
+        android:textColor="@color/white"
+        android:autoSizeTextType="uniform"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textStyle="normal"
+        />
+
+</RelativeLayout>

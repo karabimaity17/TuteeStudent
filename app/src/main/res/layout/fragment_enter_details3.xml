@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/second"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SecondFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagearrow"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/textdesign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:fontFamily="@font/bold"
+            android:lineSpacingExtra="4sp"
+            android:text="Enter Parent Details"
+            android:textColor="@color/light_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textbelowdesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/medium"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="6sp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:text="Pleasr input the following details"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:fontFamily="@font/medium"
+        android:hint="Name"
+        android:paddingStart="@dimen/_minus13sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/underline"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/grey"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fontFamily="@font/semibold"
+            android:paddingTop="@dimen/_20sdp"
+            android:text="John Doe"
+            android:textColor="@color/light_black"
+            android:textSize="14sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:fontFamily="@font/medium"
+        android:hint="Contact Number"
+        android:text="+91 6845612378"
+        android:inputType="phone"
+        android:textColor="@color/light_black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:met_floatingLabel="normal"
+        app:met_textColorHint="@color/grey"
+        app:met_underlineColor="@color/grey" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:fontFamily="@font/medium"
+        android:hint="EMAIL"
+        android:text="anyemailaddress@gmail.com"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/light_black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:met_floatingLabel="normal"
+        app:met_textColorHint="@color/grey"
+        app:met_underlineColor="@color/grey" />
+
+
+
+</LinearLayout>

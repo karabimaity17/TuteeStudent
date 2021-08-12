@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".WelcomeActivity"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_325sdp"
+            android:background="@drawable/back2"
+            android:layout_marginTop="@dimen/_325sdp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_325sdp"
+            android:background="@drawable/geometry"
+            android:layout_marginTop="@dimen/_325sdp"/>
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_510sdp"
+                />
+                <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_395sdp"
+                    app:dotsColor="@color/white"
+                    app:dotsCornerRadius="3dp"
+                    app:dotsSize="5dp"
+                    app:dotsSpacing="@dimen/_2sdp"
+                    app:dotsWidthFactor="7.5"
+                    app:selectedDotColor="@color/white"
+
+                    />
+                <android.widget.Button
+                    android:id="@+id/btnnext"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/viewpager"
+                    android:paddingHorizontal="0dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:background="@drawable/bg_whitebackground"
+                    android:fontFamily="@font/semibold"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/lightcolorbg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bold"
+            android:text="Payment Amount"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:fontFamily="@font/bold"
+            android:text="$378"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/medium"
+        android:hint="CARD NUMBER"
+        android:paddingStart="@dimen/_minus14sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/underline"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/grey"
+        app:hintTextAppearance="@style/TextViewTextAppearance">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fontFamily="@font/semibold"
+            android:paddingTop="@dimen/_30sdp"
+            android:text="XXXX XXXX XXXX 4567"
+            android:textColor="@color/light_black"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textnew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textcard"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_minus14sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:background="@drawable/underline"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/medium"
+        android:hint="NAME ON CARD"
+        android:textColorHint="@color/grey"
+        app:hintTextAppearance="@style/TextViewTextAppearance">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fontFamily="@font/semibold"
+            android:paddingTop="@dimen/_30sdp"
+            android:text="AlexBenjamin"
+            android:textColor="@color/light_black"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textnew"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:fontFamily="@font/medium"
+            android:hint="EXPIRY DATE"
+            android:paddingStart="@dimen/_minus13sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:background="@drawable/underline"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/grey"
+            app:hintTextAppearance="@style/TextViewTextAppearance">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/semibold"
+                android:inputType="number"
+                android:paddingTop="@dimen/_30sdp"
+                android:text="08/23"
+                android:textColor="@color/light_black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:fontFamily="@font/medium"
+            android:hint="CVV"
+            android:paddingStart="@dimen/_minus14sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:background="@drawable/underline"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/grey"
+            app:hintTextAppearance="@style/TextViewTextAppearance">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="@font/semibold"
+                android:inputType="number"
+                android:paddingTop="@dimen/_30sdp"
+                android:text="323"
+                android:textColor="@color/light_black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/btnconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/btnbackground"
+        android:fontFamily="@font/semibold"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp" />
+</RelativeLayout>

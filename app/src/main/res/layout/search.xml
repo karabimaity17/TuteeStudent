@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardsearching"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_380sdp"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_10sdp"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/ic_search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:fontFamily="@font/semibold"
+            android:text="Advance Search"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="#f8f8f8" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:paddingStart="@dimen/_minus13sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:background="@drawable/underline"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/medium"
+            android:hint="TEACHER NAME"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColorHint="@color/grey"
+            app:hintTextAppearance="@style/TextViewTextAppearance">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Jhon Woods"
+                android:paddingTop="@dimen/_30sdp"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/light_black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spinboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/medium"
+            android:hint="BOARD"
+            android:text="India"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/light_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:met_floatingLabel="normal"
+            app:met_textColorHint="@color/grey"
+            app:met_underlineColor="@color/grey" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spinsyllabus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/medium"
+            android:hint="SYLLABUS"
+            android:text="CBSC"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/light_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:met_floatingLabel="normal"
+            app:met_textColorHint="@color/grey"
+            app:met_underlineColor="@color/grey" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spinsubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_195sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/medium"
+            android:hint="SUBJECT"
+            android:text="English"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/light_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:met_floatingLabel="normal"
+            app:met_textColorHint="@color/grey"
+            app:met_underlineColor="@color/grey" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spinnation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_240sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/medium"
+            android:hint="NATIONALITY"
+            android:text="India"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/light_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:met_floatingLabel="normal"
+            app:met_textColorHint="@color/grey"
+            app:met_underlineColor="@color/grey" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spincountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_285sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/medium"
+            android:hint="COUNTRY OF LIVING"
+            android:text="United Arab Emirates"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/light_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:met_floatingLabel="normal"
+            app:met_textColorHint="@color/grey"
+            app:met_underlineColor="@color/grey" />
+        <!--      <TextView
+                  android:id="@+id/textname"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_45sdp"
+                  android:text="TEACHER NAME"
+                  android:textColor="#7e7e7e"
+                  android:textSize="12sp"
+                  android:textStyle="normal" />
+
+              <EditText
+                  android:id="@+id/editname"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_50sdp"
+                  android:layout_marginRight="@dimen/_10sdp" />
+
+              <TextView
+                  android:id="@+id/textboard"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_95sdp"
+                  android:text="BOARD"
+                  android:textColor="#7e7e7e"
+                  android:textSize="12sp"
+                  android:textStyle="normal" />
+
+              <EditText
+                  android:id="@+id/editboard"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_100sdp"
+                  android:layout_marginRight="@dimen/_10sdp" />
+
+              <ImageView
+                  android:layout_width="@dimen/_10sdp"
+                  android:layout_height="@dimen/_5sdp"
+                  android:layout_marginLeft="@dimen/_230sdp"
+                  android:layout_marginTop="@dimen/_109sdp"
+                  android:src="@drawable/spinner" />
+
+              <TextView
+                  android:id="@+id/textsyllabus"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_145sdp"
+                  android:text="SYLLABUS"
+                  android:textColor="#7e7e7e"
+                  android:textSize="12sp"
+                  android:textStyle="normal" />
+
+              <EditText
+                  android:id="@+id/editsyllabus"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_150sdp"
+                  android:layout_marginRight="@dimen/_10sdp" />
+
+              <ImageView
+                  android:layout_width="@dimen/_10sdp"
+                  android:layout_height="@dimen/_5sdp"
+                  android:layout_marginLeft="@dimen/_230sdp"
+                  android:layout_marginTop="@dimen/_159sdp"
+                  android:src="@drawable/spinner" />
+
+              <TextView
+                  android:id="@+id/textsubject"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_195sdp"
+                  android:text="SUBJECT"
+                  android:textColor="#7e7e7e"
+                  android:textSize="12sp"
+                  android:textStyle="normal" />
+
+              <EditText
+                  android:id="@+id/editsubject"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_200sdp"
+                  android:layout_marginRight="@dimen/_10sdp" />
+
+              <ImageView
+                  android:layout_width="@dimen/_10sdp"
+                  android:layout_height="@dimen/_5sdp"
+                  android:layout_marginLeft="@dimen/_230sdp"
+                  android:layout_marginTop="@dimen/_209sdp"
+                  android:src="@drawable/spinner" />
+
+              <TextView
+                  android:id="@+id/textnation"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_245sdp"
+                  android:text="NATIONALITY"
+                  android:textColor="#7e7e7e"
+                  android:textSize="12sp"
+                  android:textStyle="normal" />
+
+              <EditText
+                  android:id="@+id/editnation"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_250sdp"
+                  android:layout_marginRight="@dimen/_10sdp" />
+
+              <ImageView
+                  android:layout_width="@dimen/_10sdp"
+                  android:layout_height="@dimen/_5sdp"
+                  android:layout_marginLeft="@dimen/_230sdp"
+                  android:layout_marginTop="@dimen/_259sdp"
+                  android:src="@drawable/spinner" />
+
+              <TextView
+                  android:id="@+id/textcountry"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_295sdp"
+                  android:text="COUNTRY OF LIVING"
+                  android:textColor="#7e7e7e"
+                  android:textSize="12sp"
+                  android:textStyle="normal" />
+
+              <EditText
+                  android:id="@+id/editcountry"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_300sdp"
+                  android:layout_marginRight="@dimen/_10sdp" />
+
+              <ImageView
+                  android:layout_width="@dimen/_10sdp"
+                  android:layout_height="@dimen/_5sdp"
+                  android:layout_marginLeft="@dimen/_230sdp"
+                  android:layout_marginTop="@dimen/_309sdp"
+                  android:src="@drawable/spinner" /> -->
+
+        <android.widget.Button
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_335sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/btnbackground"
+            android:text="Search"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

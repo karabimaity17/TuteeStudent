@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:fontFamily="@font/semibold"
+        android:text="Dear Sharath KC"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Thanks for the Order"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/light_black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal|center"
+        android:fontFamily="@font/medium"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:lineSpacingExtra="@dimen/_3sdp"
+        android:text="Here's your confirmation for order\nnumber 1662046650.Review your\nreceipt and get started using\nyour Account."
+        android:textColor="#7e7e7e"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <android.widget.Button
+        android:id="@+id/btnview"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/bold"
+        android:textSize="14sp"
+        android:background="@drawable/btnbackground"
+        android:text="View Receipt"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</LinearLayout>

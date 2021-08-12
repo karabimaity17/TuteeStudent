@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/fonts_medium"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#01b9ff"
+                android:lineSpacingExtra="6sp"
+                android:text="Section A"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/fonts_semibold"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="#3e3e3e"
+                android:lineSpacingExtra="6sp"
+                android:text="Very Short Answer Questions"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/ques_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textStyle="normal"
+                    android:textSize="13sp"
+                    android:textColor="#3e3e3e"
+                    android:lineSpacingExtra="6sp"
+                    android:text="02"/>
+                <TextView
+                    android:id="@+id/text_ques"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_medium"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="6sp"
+                    android:text="Study the picture and answer the question that follow"/>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_155sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginHorizontal="@dimen/_5sdp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pic_3"
+                    android:scaleType="fitXY"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fonts_medium"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="#3e3e3e"
+                android:lineSpacingExtra="6sp"
+                android:text="Which of the following aspect best signifies this image of 'Germenia'?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#01b9ff"
+                    android:lineSpacingExtra="6sp"
+                    android:text="A"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_medium"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="6sp"
+                    android:text="Heroism and Justice"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#01b9ff"
+                    android:lineSpacingExtra="6sp"
+                    android:text="B"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_medium"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="6sp"
+                    android:text="Heroism and Justice"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#01b9ff"
+                    android:lineSpacingExtra="6sp"
+                    android:text="C"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_medium"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="6sp"
+                    android:text="Heroism and Justice"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#01b9ff"
+                    android:lineSpacingExtra="6sp"
+                    android:text="D"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_medium"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="6sp"
+                    android:text="Heroism and Justice"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_mcq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                android:layout_marginTop="@dimen/_15sdp"
+                tools:listitem="@layout/single_mcq"
+                tools:itemCount="4"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Answer"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:fontFamily="@font/fonts_bold"
+                    android:background="#01b9ff"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

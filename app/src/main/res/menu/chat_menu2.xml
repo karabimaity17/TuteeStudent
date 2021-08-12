@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    >
+    <item
+        android:id="@+id/option_everyone"
+        android:title="Delete For Everyone"
+      />
+
+    <item
+        android:id="@+id/option_me"
+        android:title="Delete for Me"
+       />
+    <item
+        android:id="@+id/option_cancel"
+        android:title="Cancel"
+
+       />
+
+
+</menu>

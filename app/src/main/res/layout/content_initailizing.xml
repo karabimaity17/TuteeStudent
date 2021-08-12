@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/whiteback2"
+    android:paddingBottom="@dimen/_30sdp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/bold"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6sp"
+            android:text="Please wait\nWe are finding for your teachers"
+            android:textColor="#3e3e3e"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_210sdp"
+            android:layout_height="@dimen/_210sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_50sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_105sdp"
+            >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_220sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/circular_shape"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="50"
+                android:progressBackgroundTint="@color/white"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold"
+                    android:text="1-100"
+                    android:textColor="@color/purple"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--<ImageView
+           android:layout_width="@dimen/_250sdp"
+           android:layout_height="@dimen/_220sdp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="@dimen/_60sdp"
+           android:src="@drawable/check" />  -->
+    </LinearLayout>
+
+</RelativeLayout>

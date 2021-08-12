@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:id="@+id/linear_badge">
+
+    <ImageView
+        android:id="@+id/img_badge"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/badge_2"
+        android:scaleType="fitXY"
+        android:padding="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 Points"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fonts_medium"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textStyle="normal"
+        android:textSize="13sp"
+        android:layout_marginBottom="@dimen/_5sdp"/>
+
+</LinearLayout>

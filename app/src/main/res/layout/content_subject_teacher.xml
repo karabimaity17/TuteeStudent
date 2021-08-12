@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background"
+        app:itemHorizontalTranslationEnabled="true"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menubottom_nav" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomnav">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/lightcolorbg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Chat Invitation"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/fonts_semibold"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/fonts_light"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/light_black"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:lineSpacingExtra="6sp"
+                android:text="Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna
+aliquyam erat, sed diam voluptua."
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/lightcolorbg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Education"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/fonts_semibold"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/fonts_light"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/light_black"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:lineSpacingExtra="6sp"
+                android:text="Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna
+aliquyam erat, sed diam voluptua."
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/lightcolorbg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Experience"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/fonts_semibold"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/fonts_light"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/light_black"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:lineSpacingExtra="6sp"
+                android:text="Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna
+aliquyam erat, sed diam voluptua."
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/white"
+    android:id="@+id/card">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fonts_bold"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#3e3e3e"
+                android:lineSpacingExtra="4sp"
+                android:text="Chapter Title" />
+            <TextView
+                android:id="@+id/textViewOptions"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentRight="true"
+                android:rotation="270"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:text="&#8942;"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonts_medium"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#7e7e7e"
+            android:lineSpacingExtra="4sp"
+            android:text="Content Forces and Newtons Law" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_semibold"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#753abc"
+                    android:lineSpacingExtra="4sp"
+                    android:text="English" />
+                <TextView
+                    android:id="@+id/lesson_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#7e7e7e"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Lesson code : 32654" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_semibold"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#753abc"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Post Date" />
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#7e7e7e"
+                    android:lineSpacingExtra="4sp"
+                    android:text="05.10.2020" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/views"
+                android:layout_width="0dp"
+                android:layout_weight="1.6"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fonts_medium"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:textColor="#753abc"
+                android:lineSpacingExtra="3sp"
+                android:text="View 132" />
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
